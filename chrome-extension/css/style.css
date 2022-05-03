@@ -1,0 +1,51 @@
+.rounding-output {
+	background-color: #dcdcdc;
+	position: relative;
+	display: inline;
+	padding: 0.2em;
+	border-radius: 10px;
+}
+
+div#roundedfrom {
+	position: absolute;
+	left: -5px;
+	width: max-content;
+	height: 2.5em;
+	top: 0;
+	padding-top:  1.5em;
+	display: none;
+}
+
+div#roundedfrom div {
+	font-size: 14px;
+	padding:  5px;
+	border-radius: 10px;
+	background-color: #00A4EF;
+	color:  white;
+	border:  2px solid white;
+	font-family: sans-serif;
+}
+
+.iconify {
+	margin-left:  20px;
+	cursor: pointer;
+}
+/*
+#undo-button {
+	margin-left:  10px;
+	background-color: transparent;
+	border: none;
+	width:  auto;
+}
+
+.material-icons.md-12 {
+	font-size:  12px;
+}*/
+
+/*#undo-button:after {
+	display: inline-block;
+	content: "\00d7";  This will render the 'X' 
+	font-size: 14px;
+	color: white;
+	font-weight: 600;
+}*/

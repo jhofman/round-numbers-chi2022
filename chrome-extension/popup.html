@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hello World</title>
+	<style>
+		body {
+			width: 320px;
+		}
+		select {
+			width: 30px;
+		}
+
+		button#submit {
+			float: left;
+			margin-bottom: 10px;
+		}
+
+		button#undo-all-roundings {
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<span>Only round numbers with at least </span>
+	<select id="min-digit-num" name="min-digit-num">
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5" selected>5</option>
+		<option value="6">6</option>
+	</select>
+	<span> integer digits.</span>
+
+	<br><br>
+
+	<span>Round numbers to </span>
+	<select id="leading-digit" name="leading-digit">
+		<option value="1" checked>1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+	</select>
+	<span> leading digit(s).</span>
+
+	<br><br>
+	<span>Add comma separators: </span>
+	<input type="radio" id="add-comma" value="add-comma" name="comma" checked>
+	<label for="add-comma">Yes</label>
+	<input type="radio" id="no-comma" value="no-comma" name="comma">
+	<label for="no-comma">No</label>
+
+	<br><br>
+	<span>Rounding mode: </span>
+	<br>
+	<input type="radio" value="default" name="rouding-mode" checked>
+	<label for="default">Default</label>
+	<input type="radio" value="digits-only" name="rouding-mode">
+	<label for="digits-only">Digits only</label>
+	<input type="radio" value="with-modifier" name="rouding-mode">
+	<label for="with-modifier">With modifier</label>
+
+	<br><br>
+
+	<button id="submit">Round numbers</button>
+	<button id="undo-all-roundings">Undo all roundings</button>
+
+	<script src="js/background.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+	"manifest_version" : 2,
+	"name" : "Number Rounding Service",
+	"description" : "Automatically round numbers on a document",
+	"version" : "0.1.0",
+	"background" : {
+		"scripts" : ["js/background.js"]
+	},
+	"browser_action" : {
+		"default_popup" : "popup.html",
+		"default_title" : "Rounding Options"
+	},
+	"content_scripts" : [{
+		"matches" : ["<all_urls>"],
+		"js" : ["js/iconify.min.js", "js/content.js"],
+		"css" : ["css/style.css"]
+	}]
+}
